@@ -28,7 +28,7 @@ export const Apply = () => {
               <span>
                 <span className="font-bold">Địa chỉ: </span>
                 ĐHCT, đường 3/2,
-                phường Xuân Khánh, quận Ninh Kiều, thành phốs Cần Thơ
+                phường Xuân Khánh, quận Ninh Kiều, thành phố Cần Thơ
               </span>
             </div>
             <div className="flex items-center">
