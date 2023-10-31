@@ -30,6 +30,8 @@ export const ApplyForm = () => {
   });
 
   console.log(formik)
+  console.log(formik.values)
+
 
   
   return (
@@ -241,6 +243,25 @@ export const ApplyForm = () => {
         />
         {/* {formik.touched.image && formik.errors.image && (
           <div className="text-red-600">{formik.errors.image}</div>
+        )} */}
+      </div>
+
+      <div className="col-span-2">
+        <label
+          htmlFor="religion"
+          className="block text-sm font-semibold leading-6 text-gray-900"
+        >
+          Đợt sát hạch
+        </label>
+        <select 
+        name="examination" 
+        id="examination"
+        className="block w-full rounded-md border-0   px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+        >
+          <option value="">Chọn đợt sát hạch</option>
+        </select>
+        {/* {formik.touched.religion && formik.errors.religion && (
+          <div className="text-red-600">{formik.errors.religion}</div>
         )} */}
       </div>
 

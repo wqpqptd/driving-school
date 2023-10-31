@@ -1,6 +1,6 @@
 import { FiMapPin, FiPhone, FiMail } from 'react-icons/fi';
 import { TbBuildingSkyscraper } from 'react-icons/tb';
-import { ApplyForm } from './ui/ApplyForm';
+import { ApplyForm } from './ui/apply/ApplyForm';
 
 export const Apply = () => {
   return (
