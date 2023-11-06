@@ -5,33 +5,35 @@ export const useApplyForm = () => {
   const formik = useFormik({
     initialValues: {
       name: '',
-      dday:'',
+      dateofbirth:'',
       sex: '',
       idcard:'',
-      nation:'',
-      religion:'',
+      nation_id:'',
+      religion_id:'',
       province: '',
       district:'',
       wards:'',
-      phoneNumber: '',
+      phone: '',
       image: '',
       note: '',
+      examinations_id:'',
     },
     validationSchema: Yup.object({
       name: Yup.string().min(2, "Ít nhất có 2 ký tự")
       .max(15, "Tối đa 30 ý tự").required('Bạn phải nhập họ và tên!'),
-      dday: Yup.string().required('Bạn phải nhập ngày sinh!'),
+      dateofbirth: Yup.string().required('Bạn phải nhập ngày sinh!'),
       sex: Yup.string().required('Bạn phải chọn giới tính!'),
       idcard:Yup.string().min(2, "Mã định danh có ít nhất 9 số!")
       .max(15, "Mã định danh có nhiều nhất 12 số!").required('Bạn phải nhập mã số định danh!'),
-      nation: Yup.string().required('Bạn phải chọn dân tộc!'),
-      religion: Yup.string().required('Bạn phải chọn tôn giáo!'),
+      nation_id: Yup.string().required('Bạn phải chọn dân tộc!'),
+      religion_id: Yup.string().required('Bạn phải chọn tôn giáo!'),
       province: Yup.string().required('Bạn phải chọn tỉnh/thành phố!'),
       district: Yup.string().required('Bạn phải chọn quận/huyện!'),
       wards: Yup.string().required('Bạn phải chọn xã phường!'),
-      phoneNumber: Yup.string().required('Bạn phải nhập số điện thoại!'),
+      phone: Yup.string().required('Bạn phải nhập số điện thoại!'),
       image: Yup.string().required('Bạn phải tải ảnh lên!'),
       note: Yup.string().required('Bạn phải nhập ghi chú!'),
+      examinations_id: Yup.string().required("Bạn phải chọn đợt sát hạch!")
 
     }),
     onSubmit: (values) => {
