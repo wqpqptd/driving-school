@@ -11,8 +11,9 @@ import { useRouter } from 'next/router';
 
 
 export const ApplyForm = () => {
-    const router = useRouter()
+  const router = useRouter()
   const [avatarImg, setAvatarImg] = useState<File | null>(null)
+  const [avatarHealthCard, setAvatarHealthCard] = useState<File | null>(null)
   const [religions, setReligions] = useState([])
   const [nations, setNations] = useState([])
   const [examinations, setExaminations] = useState([])
@@ -28,20 +29,24 @@ export const ApplyForm = () => {
       district: '',
       wards: '',
       phone: '',
-      // image: '',
+      email:'',
+      image: '',
+      file :'',
       note: '',
       examinations_id: '',
     },
     onSubmit: values => {
-      console.log(avatarImg)
-      console.log(JSON.stringify(values, null, 2));
+      // console.log(avatarImg)
+      // console.log(JSON.stringify(values, null, 2));
       const form = new FormData();
       form.append('name', values.name);
       form.append('dateofbirth', values.dateofbirth);
       form.append('sex', values.sex);
       form.append('idcard', values.idcard);
       form.append('phone', values.phone);
+      form.append('email', values.email);
       form.append('image', avatarImg);
+      form.append('file', avatarHealthCard);
       form.append('note', values.note);
       form.append('nation_id', values.nation_id);
       form.append('religion_id', values.religion_id);
@@ -52,12 +57,13 @@ export const ApplyForm = () => {
       //post api
 
 
-      axios.post(`${URL_SERVER}/profile`, form, {headers: { "Content-Type": "multipart/form-data" },
-    }
+      axios.post(`${URL_SERVER}/profile`, form, {
+        headers: { "Content-Type": "multipart/form-data" },
+      }
       )
         .then(() => {
-            router.push('/')
-         })
+          router.push('/')
+        })
         .catch(err => console.log(err))
     },
   });
@@ -143,7 +149,7 @@ export const ApplyForm = () => {
           Giới tính
         </label>
         <input
-          value="female"
+          value="Nữ"
           onChange={formik.handleChange}
           placeholder="Giới tính"
           type="radio"
@@ -154,7 +160,7 @@ export const ApplyForm = () => {
         <label htmlFor="nu"> Nữ </label>
         <br />
         <input
-          value="male"
+          value="Nam"
           onChange={formik.handleChange}
           placeholder="Giới tính"
           type="radio"
@@ -275,6 +281,27 @@ export const ApplyForm = () => {
           <div className="text-red-600">{formik.errors.phone}</div>
         )}
       </div>
+      <div className="col-span-2">
+        <label
+          htmlFor="email"
+          className="block text-sm font-semibold leading-6 text-gray-900 ring-indigo-600"
+        >
+          Email
+        </label>
+        <input
+          value={formik.values.email}
+          onChange={formik.handleChange}
+          placeholder="Email"
+          type="email"
+          name="email"
+          id="email"
+          autoComplete="email"
+          className="block w-full rounded-md border-0  px-3.5 py-2 pl-4   text-gray-900 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+        />
+        {formik.touched.email && formik.errors.email && (
+          <div className="text-red-600">{formik.errors.email}</div>
+        )}
+      </div>
 
       <div className="col-span-2">
         <label
@@ -288,11 +315,38 @@ export const ApplyForm = () => {
             if (e.target.files && e.target.files[0]) {
               const img = e.target.files[0];
               setAvatarImg(img);
-          }}}
+            }
+          }}
           placeholder="Hình ảnh"
           type="file"
           name="image"
           id="image"
+          autoComplete="off"
+          className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+        />
+        {/* {formik.touched.image && formik.errors.image && (
+          <div className="text-red-600">{formik.errors.image}</div>
+        )} */}
+      </div>
+
+      <div className="col-span-2">
+        <label
+          htmlFor="file"
+          className="block text-sm font-semibold leading-6 text-gray-900"
+        >
+          Phiếu sức khỏe
+        </label>
+        <input
+          onChange={e => {
+            if (e.target.files && e.target.files[0]) {
+                const healthCard = e.target.files[0];
+                setAvatarHealthCard(healthCard);
+            }
+        }}
+          placeholder="Phiếu sức khỏe"
+          type="file"
+          name="file"
+          id="file"
           autoComplete="off"
           className="block w-full rounded-md border-0 px-3.5 py-2 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-500 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
         />

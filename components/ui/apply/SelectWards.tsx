@@ -28,8 +28,8 @@ export default function SelectWards({ label, placeholder, value, onChange, provi
   // };
 
 
-  console.log('Wards:', wards);
-  console.log('value', value.wards);
+  // console.log('Wards:', wards);
+  // console.log('value', value.wards);
 
   return (
     <>
