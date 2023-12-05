@@ -4,7 +4,7 @@ import Image from 'next/image';
 export const TypeA3Cart = () => {
   return (
     <section className="cartKat container mx-auto">
-      <h1 className="pb-10 pt-6 text-center text-4xl font-bold">Bằng A</h1>
+      <h1 className="pb-10 pt-6 text-center text-4xl font-bold">Bằng A3</h1>
       <div className="h-full w-full lg:flex">
         <div className=" flex w-full flex-col lg:w-1/2 ">
           <Image
@@ -15,23 +15,29 @@ export const TypeA3Cart = () => {
             alt="wave Thai"
           />
           <div className="mt-10 text-xl font-semibold  uppercase tracking-wide  text-red-600 sm:ml-20 ">
-            <del className="text-black">2.600.000 VND</del>
-            {'  '} Giá ưu đãi 2.200.000
+            {/* <del className="text-black">2.600.000 VND</del> */}
+            {'  '} Phí dự thi 60.000 VND - 270.000 VND
             <br />
-            (10 người đầu tiên)
+            {/* (10 người đầu tiên) */}
           </div>
           <div className="mt-10 text-xl font-semibold  uppercase tracking-wide  text-black sm:ml-20 ">
-          Khóa học bao gồm:
+          Mức phí sát hạch lái xe ô tô hạng xe A1, A2, A3, A4 gồm:
           </div>
           <div className="mt-2 sm:ml-20   ">
             <ul className="mb-4 list-disc pl-5 text-gray-500 ">
               <li className="list-disc font-medium text-red-500  ">
-                <span className="text-gray-800">Tài liệu đào tạo </span>
+                <span className="text-gray-800">Sát hạch lý thuyết: 60.000 đồng/lần. </span>
               </li>
               <li className="list-disc font-medium text-red-500  ">
-                <span className="text-gray-800">Lý thuyết 30h </span>
+                <span className="text-gray-800">Sát hạch thực hành: 70.000 đồng/lần. </span>
               </li>
               <li className="list-disc font-medium text-red-500  ">
+                <span className="text-gray-800">
+                <a className='hover:bg-gray-200' href="https://vanban.chinhphu.vn/?pageid=27160&docid=208104&classid=1&orggroupid=4">
+                (Theo thông tư số 37/2023/TT-BTC có hiệu lực từ ngày 1/8/2023)</a>
+                </span>
+              </li>
+              {/* <li className="list-disc font-medium text-red-500  ">
                 <span className="text-gray-800">Thực hành 30h</span>{' '}
               </li>
               <li className="list-disc font-medium text-red-500  ">
@@ -59,71 +65,77 @@ export const TypeA3Cart = () => {
                 <span className="text-gray-800">
                 Gói đi bổ sung 10h/700.000 VND{' '}
                 </span>
-              </li>
+              </li> */}
             </ul>
           </div>
           <div className="mt-10 text-start text-xl  font-semibold uppercase tracking-wide  text-black sm:ml-20 ">
-          Trả góp:
+          Bằng lái xe A3:
           </div>
           <div className="mt-2 sm:ml-20   ">
             <ul className="mb-4 list-disc pl-5  text-gray-500 ">
               <li className="list-disc font-medium text-red-500  ">
                 <span className="text-gray-800">
-                Trả góp 0% - trong suốt thời gian của khóa học, phần đầu tiên - PLN 600 trước khi bắt đầu
+                Hạng A3 cấp cho người lái xe để điều khiển xe mô tô ba bánh, các loại xe quy định cho giấy phép lái xe hạng A1 và các xe tương tự.
                 </span>
               </li>
               <li className="list-disc font-medium text-red-500  ">
                 <span className="text-gray-800">
-                các lớp lý thuyết, phần thứ hai - 600 PLN trước khi bắt đầu lớp học
+                Bằng lái xe A3 được sử dụng phổ biến trong các trường hợp sử dụng phương tiện xe ba bánh để vận chuyển đồ đạc khi chuyển nhà, giao sản phẩm cồng kềnh cho các đại lý, cửa hàng,…
                 </span>
               </li>
               <li className="list-disc font-medium text-red-500  ">
                 <span className="text-gray-800">
-                thực hành phần thứ ba - 500 PLN sau 10 giờ học
                 </span>
               </li>
               <li className="list-disc font-medium text-red-500  ">
                 <span className="text-gray-800">
-                trả góp IV thực hành - 500 PLN sau 20 giờ học thực hành
+                Bằng lái xe A3 có thể sử dụng để lái các loại xe máy thông thường nhưng không thể lái các xe phân khối lớn từ 175cc trở lên.
                 </span>
               </li>
             </ul>
           </div>
         </div>
         <div className="container mx-auto  w-full p-0 lg:w-1/2">
-          <TypeCart title="Những gì chúng tôi cung cấp:" imgSrc="/logo1.png">
+          <TypeCart title="Tài xế sở hữu bằng A3 có thể lái những xe sau:" imgSrc="/logo1.png">
             <ul className="mb-4 list-disc pl-5">
+              
               <li className="list-disc font-medium text-red-500  ">
                 <span className="text-gray-800">
-                  <span className="font-semibold">Yamaha MT07</span> là một chiếc xe máy có khả năng vận hành cực kỳ năng động, cho phép bạn di chuyển mượt mà và an toàn trên đường. Ngoài ra, đặc điểm thiết kế và xử lý của nó làm cho nó trở thành một chiếc xe máy dễ lái và có thể tùy chỉnh.
+                Theo khoản 3 Điều 16 Thông tư 12/2017/TT-BGTVT, bằng lái A3 được điều khiển cái loại xe:
+ </span>
+              </li>
+              <li className="list-disc font-medium text-red-500  ">
+                <span className="text-gray-800">
+                Xe mô tô 02 bánh có dung tích xy lanh từ 50 cm3 - dưới 175 cm3.
                 </span>
               </li>
               <li className="list-disc font-medium text-red-500  ">
                 <span className="text-gray-800">
-                Đường nhựa, khu vực điều động được chiếu sáng, lớn nhất ở Cần Thơ! </span>
-              </li>
-              <li className="list-disc font-medium text-red-500  ">
-                <span className="text-gray-800">
-                Phương pháp đào tạo hiệu quả được phát triển bởi các giảng viên và nhà sư phạm được xác nhận bởi tỷ lệ vượt qua kỳ thi cao
+                Xe mô tô 03 bánh dùng cho người khuyết tật.
                 </span>
               </li>
               <li className="list-disc font-medium text-red-500  ">
-                <span className="text-gray-800">
-                Khả năng chọn giờ đào tạo thuận tiện (cưỡi ngựa cũng được tiến hành vào thứ bảy, chủ nhật và buổi tối)
-                </span>
-              </li>
+              <span className="text-gray-800">
+              Xe mô tô 03 bánh.
+              </span>
+            </li>
             </ul>
           </TypeCart>
 
-          <TypeCart title="Khám sức khỏe:" imgSrc="/badania-lekarskie.jpg">
+          <TypeCart title="Điều kiện học bằng A3" imgSrc="/badania-lekarskie.jpg">
             <li className="list-disc font-medium text-red-500  ">
               <span className="text-gray-800">
-              Giá của khóa học không bao gồm kiểm tra y tế. Có thể thực hiện một thử nghiệm như vậy trong OSK của chúng tôi. Để đặt lịch hẹn khám và đặt lịch hẹn tại trung tâm của chúng tôi, vui lòng liên hệ với văn phòng của chúng tôi qua điện thoại. Chi phí khám sức khỏe cho những người đăng ký
+              Về độ tuổi: Từ đủ 18 tuổi trở lên (theo điểm b khoản 1 Điều 60 Luật Giao thông đường bộ 2008).
               </span>
             </li>
             <li className="list-disc font-medium text-red-500  ">
               <span className="text-gray-800">
-              Lệ phí kiểm tra được bác sĩ chấp nhận dưới dạng tiền mặt hoặc thẻ thanh toán.
+              Về điều kiện sức khỏe: Đáp ứng tiêu chuẩn sức khỏe tại Phụ lục 01 ban hành kèm theo Thông tư liên tịch số 24/2015/TTLT-BYT-BGTVT.
+              </span>
+            </li>
+            <li className="list-disc font-medium text-red-500  ">
+              <span className="text-gray-800">
+              Về trình độ học vấn: Không có yêu cầu về trình độ.
               </span>
             </li>
           </TypeCart>

@@ -39,10 +39,9 @@ export const Navbar = () => {
           <button
             type="button"
             className={`flex items-center gap-x-1 text-sm font-semibold leading-6 text-gray-900 
-              ${
-                activePage.toLowerCase() === 'nasze kursy'
-                  ? ' border-b-4 border-red-600'
-                  : ' link-with-border '
+              ${activePage.toLowerCase() === 'nasze kursy'
+                ? ' border-b-4 border-red-600'
+                : ' link-with-border '
               }`}
             aria-expanded="false"
             onClick={toggleMenuMobile}
@@ -72,11 +71,10 @@ export const Navbar = () => {
             <button
               type="button"
               className={` font-regular flex items-center  gap-x-1 text-sm font-semibold leading-6 text-gray-900
-              ${
-                activePage.toLowerCase() === 'nasze kursy'
+              ${activePage.toLowerCase() === 'nasze kursy'
                   ? ' border-b-4 border-red-600'
                   : ' link-with-border '
-              }`}
+                }`}
               aria-expanded="false"
               onClick={toggleMenu}
             >
@@ -173,7 +171,7 @@ export const Navbar = () => {
                         href="/typeD"
                         className="block font-semibold text-gray-900"
                       >
-                       Bằng D<span className="absolute inset-0"></span>
+                        Bằng D<span className="absolute inset-0"></span>
                       </Link>
                       <p className="mt-1 text-gray-600">Ô tô chở người từ 10-30 chỗ</p>
                     </div>
@@ -225,53 +223,49 @@ export const Navbar = () => {
 
           <Link
             href={'/about'}
-            className={`ext-gray-900 text-sm  font-semibold leading-6 ${
-              activePage.toLowerCase() === 'about'
+            className={`ext-gray-900 text-sm  font-semibold leading-6 ${activePage.toLowerCase() === 'about'
                 ? ' border-b-4 border-red-600'
                 : ' link-with-border '
-            }`}
+              }`}
           >
             Giới thiệu
           </Link>
           <Link
             href="/contact"
-            className={`ext-gray-900 text-sm  font-semibold leading-6 ${
-              activePage.toLowerCase() === 'contact'
+            className={`ext-gray-900 text-sm  font-semibold leading-6 ${activePage.toLowerCase() === 'contact'
                 ? ' border-b-4 border-red-600'
                 : ' link-with-border '
-            }`}
+              }`}
           >
-            Liên hệ
+            Tra cứu kết quả
           </Link>
 
           <Link
             href="galeria"
-            className={`ext-gray-900 text-sm  font-semibold leading-6 ${
-              activePage.toLowerCase() === 'galeria'
+            className={`ext-gray-900 text-sm  font-semibold leading-6 ${activePage.toLowerCase() === 'galeria'
                 ? 'border-b-4 border-red-600'
                 : ' link-with-border '
-            }`}
+              }`}
           >
             Thư viện ảnh
           </Link>
 
-          <div
+          {/* <div
             onClick={() => handleNavigation('impression', '/')}
-            className={`ext-gray-900 cursor-pointer   text-sm font-semibold leading-6 ${
-              activePage.toLowerCase() === 'section=impression'
+            className={`ext-gray-900 cursor-pointer   text-sm font-semibold leading-6 ${activePage.toLowerCase() === 'section=impression'
                 ? 'border-b-4 border-red-600 text-red-600'
                 : ' link-with-border '
-            }`}
+              }`}
           >
             Điều gì tạo nên sự khác biệt của chúng tôi?
-          </div>
+          </div> */}
         </div>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <Link
             href="/apply"
             className="rounded bg-red-600 px-1  py-2 text-lg font-semibold leading-6 text-white  hover:bg-indigo-500 lg:px-3 lg:py-2 lg:text-base xl:px-8 xl:text-lg"
           >
-            Nộp hồ sơ 
+            Nộp hồ sơ
           </Link>
         </div>
         {/* </div> */}
@@ -375,7 +369,7 @@ export const Navbar = () => {
                             onClick={toggleMenuMobile}
                             className="block rounded-lg py-2 pl-6 pr-3 text-sm font-semibold leading-7 text-gray-900 hover:bg-gray-200"
                           >
-                           Bằng D
+                            Bằng D
                           </Link>
                           <Link
                             href="/typeE"
@@ -392,7 +386,7 @@ export const Navbar = () => {
                       onClick={toggleMenuMobile}
                       className="-mx-3 block rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-200"
                     >
-                     Giới thiệu
+                      Giới thiệu
                     </Link>
                     <Link
                       href="/contact"
@@ -408,12 +402,12 @@ export const Navbar = () => {
                     >
                       Thư viện ảnh
                     </Link>
-                    <div
+                    {/* <div
                       onClick={() => handleNavigation('impression', '/')}
                       className="-mx-3 block cursor-pointer rounded-lg px-3 py-2 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-200"
                     >
                       Điều gì tạo nên sự khác biệt của chúng tôi?
-                    </div>
+                    </div> */}
                   </div>
 
                   <div className="py-6">

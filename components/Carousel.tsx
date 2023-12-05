@@ -35,19 +35,19 @@ export const Carousel = () => {
 
   return (
     <section className="mx-auto my-16 w-full max-w-[1250px] lg:w-3/4">
-      <div className="block sm:hidden">
+      {/* <div className="block sm:hidden">
         <CaruselCard images={images1} />
       </div>
       <div className="hidden sm:block">
         <CaruselCard images={images2} />
-      </div>
-      <Link
+      </div> */}
+      {/* <Link
         // href="/about"
         href ="#"
         className="mx-auto mt-10 block w-[90%] rounded-lg bg-red-700 px-3 py-2.5 text-center text-2xl font-bold leading-7  text-white hover:opacity-80  lg:w-1/3"
       >
         Xem thêm nhiều đánh giá {'>>'}
-      </Link>
+      </Link> */}
     </section>
   );
 };

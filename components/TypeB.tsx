@@ -37,18 +37,18 @@ const TypeB: FC<TypeAProps> = ({}) => {
           </div>
         </div>
         <div
-          onClick={() => setActiveTab('B+E')}
+          onClick={() => setActiveTab('C')}
           className={`border-b-4 ${
-            activeTab === 'B+E' ? 'border-red-500' : 'border-gray-300'
+            activeTab === 'C' ? 'border-red-500' : 'border-gray-300'
           }  cursor-pointer`}
         >
           <div className=" h-10 w-10 cursor-pointer text-2xl font-black text-gray-600 hover:text-indigo-600 ">
-            B+E
+            C
           </div>
         </div>
       </div>
       {activeTab === 'B' && <TypeBCart />}
-      {activeTab === 'B+E' && <TypeCCart />}
+      {activeTab === 'C' && <TypeCCart />}
     </div>
   );
 };

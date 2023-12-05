@@ -25,8 +25,8 @@ export const useApplyForm = () => {
       .max(40, "Tối đa 30 ý tự").required('Bạn phải nhập họ và tên!'),
       dateofbirth: Yup.string().required('Bạn phải nhập ngày sinh!'),
       sex: Yup.string().required('Bạn phải chọn giới tính!'),
-      idcard:Yup.string().min(2, "Mã định danh có ít nhất 9 số!")
-      .max(15, "Mã định danh có nhiều nhất 12 số!").required('Bạn phải nhập mã số định danh!'),
+      idcard:Yup.string().min(2, "Căn cước công dân có ít nhất 9 số!")
+      .max(15, "Căn cước công dân có nhiều nhất 12 số!").required('Bạn phải nhập mã số định danh!'),
       nation_id: Yup.string().required('Bạn phải chọn dân tộc!'),
       religion_id: Yup.string().required('Bạn phải chọn tôn giáo!'),
       province: Yup.string().required('Bạn phải chọn tỉnh/thành phố!'),

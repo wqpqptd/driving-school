@@ -15,117 +15,111 @@ export const TypeBCart = () => {
             alt="car-2"
           />
           <div className="mt-10 text-xl font-semibold  uppercase tracking-wide  text-red-600 sm:ml-20 ">
-            <del className="text-black">2.600.000 VND</del>
-            {'  '} Giá ưu đãi 2.200.000
-            <br />
-            (10 người đầu tiên)
+            {/* <del className="text-black">2.600.000 VND</del> */}
+            {'  '}Phí dự thi 100.000 VND - 630.000 VND
+            {/* <br />
+            (10 người đầu tiên) */}
           </div>
           <div className="mt-10 text-xl font-semibold  uppercase tracking-wide  text-black sm:ml-20 ">
-            Khóa học bao gồm:
+          Mức phí sát hạch lái xe ô tô hạng xe B1, B2 gồm:
           </div>
           <div className="mt-2 sm:ml-20   ">
             <ul className="mb-4 list-disc pl-5 text-gray-500 ">
               <li className="list-disc font-medium text-red-500  ">
-                <span className="text-gray-800">Tài liệu đào tạo</span>
+                <span className="text-gray-800">Sát hạch lý thuyết là 100.000 đồng/lần.</span>
               </li>
               <li className="list-disc font-medium text-red-500  ">
-                <span className="text-gray-800">Lý thuyết 30h</span>
+                <span className="text-gray-800">Sát hạch thực hành trong hình là 350.000 đồng/lần.</span>
               </li>
               <li className="list-disc font-medium text-red-500  ">
-                <span className="text-gray-800">Thực hành 30h</span>
+                <span className="text-gray-800">Sát hạch thực hành trên đường giao thông là 80.000 đồng/lần.</span>
               </li>
               <li className="list-disc font-medium text-red-500  ">
                 <span className="text-gray-800">
                   {' '}
-                  Thi lý thuyết và thực hành nội bộ{' '}
+                  Sát hạch lái xe ô tô bằng phần mềm mô phỏng các tình huống giao thông là 100.000 đồng/lần.{' '}
                 </span>
               </li>
               <li className="list-disc font-medium text-red-500  ">
                 <span className="text-gray-800">
-                  Đào tạo các kỹ năng sơ cứu, cấp cứu
-                </span>
-              </li>
-              <li className="list-disc font-medium text-red-500  ">
-                <span className="text-gray-800">
-                  Tư vấn với giảng viên
-                </span>
-              </li>
-              <li className="list-disc font-medium text-red-500  ">
-                <span className="text-gray-800">Bảo hiểm tai nạn</span>
-              </li>
-              <li className="list-disc font-medium text-red-500  ">
-                <span className="text-gray-800">Các chuyến đi bổ sung 1h/80.000 VND</span>
-              </li>
-              <li className="list-disc font-medium text-red-500  ">
-                <span className="text-gray-800">
-                  Gói đi bổ sung 10h/700.000 VND
+                <a className='hover:bg-gray-200' href="https://vanban.chinhphu.vn/?pageid=27160&docid=208104&classid=1&orggroupid=4">
+                (Theo thông tư số 37/2023/TT-BTC có hiệu lực từ ngày 1/8/2023)</a>
                 </span>
               </li>
             </ul>
           </div>
           <div className="mt-10 text-start text-xl  font-semibold uppercase tracking-wide  text-black sm:ml-20 ">
-            Trả góp:
+            Giấy phép lái xe ô tô hạng B2:
           </div>
           <div className="mt-2 sm:ml-20   ">
             <ul className="mb-4 list-disc pl-5  text-gray-500 ">
               <li className="list-disc font-medium text-red-500  ">
                 <span className="text-gray-800">
-                Trả góp 0% - trong suốt thời gian của khóa học, phần đầu tiên - PLN 600 trước khi bắt đầu
+                Đây được đánh giá là loại bằng lái xe ô tô phổ biến nhất, được rất nhiều tài xế lựa chọn để thi sát hạch.
                 </span>
               </li>
               <li className="list-disc font-medium text-red-500  ">
                 <span className="text-gray-800">
-                các lớp lý thuyết, phần thứ hai - 600 PLN trước khi bắt đầu lớp học
+                Người có bằng B2 có thể điều khiển các loại phương tiện giao thông theo quy định tại khoản 7 <a className='hover:bg-gray-200' href="https://vanban.chinhphu.vn/?pageid=27160&docid=189707">Điều 16 Thông tư 12/2017/TT-BGTVT</a> như sau:
                 </span>
               </li>
               <li className="list-disc font-medium text-red-500  ">
                 <span className="text-gray-800">
-                thực hành phần thứ ba - 500 PLN sau 10 giờ học
+                Ô tô chuyên dùng có trọng tải thiết kế dưới 3.500 kg.
                 </span>
               </li>
               <li className="list-disc font-medium text-red-500  ">
                 <span className="text-gray-800">
-                  trả góp IV thực hành - 500 PLN sau 20 giờ học thực hành
+                Các loại xe quy định cho giấy phép lái xe hạng B1.
                 </span>
               </li>
             </ul>
           </div>
         </div>
         <div className="container mx-auto  w-full p-0 lg:w-1/2">
-          <TypeCart title="Những gì chúng tôi cung cấp:" imgSrc="/logo1.png">
+          <TypeCart title="Tài xế sở hữu bằng B2 có thể lái những xe sau:" imgSrc="/logo1.png">
             <ul className="mb-4 list-disc pl-5">
               <li className="list-disc font-medium text-red-500  ">
                 <span className="text-gray-800">
-                Đường nhựa, khu vực điều động được chiếu sáng, lớn nhất ở Cần Thơ!
+                Ô tô chở người đến 09 chỗ ngồi, kể cả chỗ ngồi cho người lái xe.
                 </span>
               </li>
               <li className="list-disc font-medium text-red-500  ">
                 <span className="text-gray-800">
-                Phương pháp đào tạo hiệu quả được phát triển bởi các giảng viên và nhà sư phạm được xác nhận bởi tỷ lệ vượt qua kỳ thi cao
-                </span>{' '}
-              </li>
-              <li className="list-disc font-medium text-red-500  ">
-                <span className="text-gray-800">
-                Khả năng chọn giờ đào tạo thuận tiện (cưỡi ngựa cũng được tiến hành vào thứ bảy, chủ nhật và buổi tối)
+                Ô tô chuyên dùng có trọng tải thiết kế dưới 3,5 tấn.
                 </span>
               </li>
               <li className="list-disc font-medium text-red-500  ">
                 <span className="text-gray-800">
-                Chúng tôi bắt đầu và kết thúc chuyến đi của mình ở một nơi thuận tiện - tại bùng binh Fordoński (trung tâm giao thông)
+                Ô tô tải, kể cả ô tô tải chuyên dùng có trọng tải thiết kế dưới 3,5 tấn.
+                </span>
+              </li>
+              <li className="list-disc font-medium text-red-500  ">
+                <span className="text-gray-800">
+                Máy kéo kéo một rơ moóc có trọng tải thiết kế dưới 3,5 tấn.
                 </span>
               </li>
             </ul>
           </TypeCart>
 
-          <TypeCart title="Khám sức khỏe:" imgSrc="/badania-lekarskie.jpg">
+          <TypeCart title="Điều kiện học bằng lái xe B2:" imgSrc="/badania-lekarskie.jpg">
             <li className="list-disc font-medium text-red-500  ">
               <span className="text-gray-800">
-              Giá của khóa học không bao gồm kiểm tra y tế. Có thể thực hiện một thử nghiệm như vậy trong OSK của chúng tôi. Để đặt lịch hẹn khám và đặt lịch hẹn tại trung tâm của chúng tôi, vui lòng liên hệ với văn phòng của chúng tôi qua điện thoại. Chi phí khám sức khỏe cho những người đăng ký
-              </span>
+              Về đối tượng: Là công dân Việt Nam, người nước ngoài được phép cư trú hoặc đang làm việc, học tập tại Việt Nam.              </span>
             </li>
             <li className="list-disc font-medium text-red-500  ">
               <span className="text-gray-800">
-              Lệ phí kiểm tra được bác sĩ chấp nhận dưới dạng tiền mặt hoặc thẻ thanh toán.
+              Về độ tuổi: Đủ tuổi 18 tuổi (tính đến ngày dự sát hạch lái xe).
+              </span>{' '}
+            </li>
+            <li className="list-disc font-medium text-red-500  ">
+              <span className="text-gray-800">
+              Về trình độ văn hóa: Không yêu cầu.
+              </span>{' '}
+            </li>
+            <li className="list-disc font-medium text-red-500  ">
+              <span className="text-gray-800">
+              Về sức khỏe: Không mắc các bệnh thuộc nhóm 3 được quy định tại Phụ lục số 1 ban hành kèm theo <a className='hover:bg-gray-200' href="https://vanban.chinhphu.vn/default.aspx?pageid=27160&docid=181518">Thông tư liên tịch số 24/2015/TTLT-BYT-BGTVT</a>.
               </span>{' '}
             </li>
           </TypeCart>

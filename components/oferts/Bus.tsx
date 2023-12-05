@@ -40,7 +40,7 @@ export const Bus = () => {
                 clipRule="evenodd"
               />
             </svg>
-            Lý thuyết 30h
+            Đào tạo lý thuyết
           </li>
           <li className="flex gap-x-3">
             <svg
@@ -55,7 +55,7 @@ export const Bus = () => {
                 clipRule="evenodd"
               />
             </svg>
-            Thực hành 30h
+            Đào tạo thực hành
           </li>
           <li className="flex gap-x-3">
             <svg
@@ -70,7 +70,7 @@ export const Bus = () => {
                 clipRule="evenodd"
               />
             </svg>
-            Sách đa phương tiện
+            Trường học rộng rãi, thoáng mát
           </li>
           <li className="flex gap-x-3">
             <svg
@@ -85,27 +85,27 @@ export const Bus = () => {
                 clipRule="evenodd"
               />
             </svg>
-            Kỳ thi nội bộ
+            Khả năng đậu sát hạch cao
           </li>
         </ul>
       </div>
       <div className="-mt-2 p-2 lg:mt-0 lg:w-full lg:max-w-md lg:flex-shrink-0">
         <div className="rounded-2xl bg-gray-50 py-10 text-center ring-1 ring-gray-400 ring-gray-900/5 lg:flex lg:flex-col lg:justify-center lg:py-16">
           <div className="mx-auto max-w-md px-1">
-            <p className="text-2xl font-black text-gray-600 ">Ưu đãi hấp dẫn!</p>
+            <p className="text-2xl font-black text-gray-600 ">Phí dự thi!</p>
             <p className="mt-6 flex items-baseline justify-center gap-x-2">
               <span className="text-5xl font-bold tracking-tight text-gray-900">
-                2.200.000
+                100.000 - 630.000
               </span>
               <span className="text-sm font-semibold leading-6 tracking-wide text-gray-600">
                 VND
               </span>
             </p>
-            <span className="text-red-600">
+            {/* <span className="text-red-600">
               Giá ưu đãi (10 người đầu tiên)
             </span>
             <br />
-            <del>2.000.000 VND</del>
+            <del>2.000.000 VND</del> */}
             <div className="flex">
               <Link
                 href="apply"
@@ -113,12 +113,12 @@ export const Bus = () => {
               >
                 Đăng ký
               </Link>
-              <Link
+              {/* <Link
                 href="contact"
                 className="ml-2 mt-5 block w-full rounded-md bg-indigo-500 px-3 py-2 text-center text-base font-semibold text-white shadow-sm hover:opacity-80 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
               >
                 Đặt câu hỏi
-              </Link>
+              </Link> */}
             </div>
           </div>
         </div>

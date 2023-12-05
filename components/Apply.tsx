@@ -7,11 +7,9 @@ export const Apply = () => {
     <section className=" flex h-auto w-full items-center justify-center p-10 py-16">
       <div>
         <h2 className="mb-8 text-center text-4xl font-bold  lg:text-5xl">
-        Đăng ký sát hạch lái xe ngay hôm nay!
+          Đăng ký sát hạch lái xe ngay hôm nay!
         </h2>
-        <p className="mb-2 text-center text-xl lg:mb-8">
-        Đặt chỗ để bắt đầu cuộc phiêu lưu học lái xe của bạn. Đội ngũ giảng viên chuyên nghiệp của chúng tôi sẵn sàng giúp bạn. Điền vào mẫu dưới đây và chúng tôi sẽ liên hệ với bạn trong thời gian sớm nhất.
-        </p>
+        <p className="mb-2 text-center text-xl lg:mb-8">Bắt đầu hành trình học lái xe của bạn ngay hôm nay bằng cách đặt chỗ. Đội ngũ giáo viên chuyên nghiệp của chúng tôi luôn sẵn sàng hỗ trợ bạn. Điền thông tin vào biểu mẫu dưới đây và chúng tôi sẽ liên hệ với bạn trong thời gian ngắn nhất.</p>
         <div className="items-center justify-between lg:flex ">
           <div className="mb-1 flex w-full flex-col p-5 lg:mb-8 lg:w-1/2 lg:p-10 ">
             <div className="mb-3 font-bold">Retro Driving School</div>
@@ -39,7 +37,7 @@ export const Apply = () => {
               </span>
             </div>
             <p className="my-5 text-center text-xl lg:my-20">
-            Ngay sau khi chúng tôi nhận được đơn đăng ký của bạn, nhóm của chúng tôi sẽ liên hệ với bạn để thảo luận chi tiết về khóa học, ngày có sẵn và trả lời tất cả các câu hỏi của bạn. Chúng tôi cung cấp một dịch vụ chuyên nghiệp và thân thiện để hỗ trợ bạn đạt được mục tiêu của mình - lấy bằng lái xe như mong ước.
+              Sau khi chúng tôi nhận được đơn đăng ký của bạn, đội ngũ của chúng tôi sẽ gửi thông báo chi tiết về buổi sát hạch. Chúng tôi cam kết cung cấp một dịch vụ chuyên nghiệp và thân thiện, hỗ trợ bạn đạt được mục tiêu quan trọng của mình - sở hữu bằng lái xe như bạn mong đợi.
             </p>
           </div>
 

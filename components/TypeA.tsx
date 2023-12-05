@@ -35,29 +35,25 @@ export const TypeA = () => {
             Bạn phải bao nhiêu tuổi để xin giấy phép lái xe trong mỗi loại?
           </h2>
           <ul className="space-y-4 text-left">
+            
             <li className="list-disc font-medium text-red-500  ">
               <span className="text-gray-800">
-                <strong>Loại A4</strong> - tuổi tối thiểu: 14 tuổi. Nó cho phép bạn lái xe có công suất lên tới 50 cm³ hoặc công suất lên tới 4 kW, và Khi nộp đơn xin giấy phép lái xe, người đó nên xuất trình sự đồng ý của cha mẹ.
+                <strong>Loại A1</strong> - bằng lái A1 sẽ được áp dụng cho người từ đủ 18 tuổi và chạy những loại xe có dung tích xi-lanh từ 50 cm3 đến dưới 175 cm3.
               </span>
             </li>
             <li className="list-disc font-medium text-red-500  ">
               <span className="text-gray-800">
-                <strong>Loại A1</strong> - tuổi tối thiểu: 16 tuổi. Nó cho phép bạn lái xe máy có dung tích lên tới 125 cc và công suất lên tới 11 kW, và Khi nộp đơn xin giấy phép lái xe, người đó phải xuất trình sự đồng ý của cha mẹ.
+                <strong>Loại A2</strong> - Hạng A2 cấp cho người lái xe để điều khiển xe mô tô hai bánh có dung tích xy lanh từ 175 cm3 trở lên và các loại xe quy định cho giấy phép lái xe hạng A1.
               </span>
             </li>
             <li className="list-disc font-medium text-red-500  ">
               <span className="text-gray-800">
-                <strong>Loại A2</strong> - tuổi tối thiểu: 18 tuổi. Nó cho phép bạn lái một chiếc xe máy với công suất lên tới 35 kW.
+                <strong>Loại A3</strong> - Hạng A3 cấp cho người lái xe để điều khiển xe mô tô ba bánh, các loại xe quy định cho giấy phép lái xe hạng A1 và các xe tương tự.
               </span>
             </li>
             <li className="list-disc font-medium text-red-500  ">
               <span className="text-gray-800">
-                <strong>Loại A</strong> - tuổi tối thiểu: 24 tuổi. Nó cho phép bạn điều khiển xe máy của mình mà không bị giới hạn sức mạnh.
-              </span>
-            </li>
-            <li className="list-disc font-medium text-red-500  ">
-              <span className="text-gray-800">
-                <strong>Loại A</strong> - độ tuổi tối thiểu: 20 tuổi, nhưng chỉ dành cho những người đã có bằng lái xe loại A2 tối thiểu 2 năm. Mặc dù tuổi đời thấp hơn, nhưng có thể đi xe máy mà không bị giới hạn sức mạnh.
+                <strong>Loại A4</strong> - Hạng A4 cấp cho người lái xe để điều khiển các loại máy kéo nhỏ có trọng tải đến 1.000 kg.
               </span>
             </li>
           </ul>
@@ -97,18 +93,18 @@ export const TypeA = () => {
             </div>
           </div>
           <div
-            onClick={() => setActiveTab('A')}
+            onClick={() => setActiveTab('A3')}
             className={`border-b-4 ${
               activeTab === 'A' ? 'border-red-500' : 'border-gray-300'
             }`}
           >
             <div className="h-10 w-10 cursor-pointer text-2xl font-black text-gray-600 hover:text-indigo-600 ">
-              A
+              A3
             </div>
           </div>
         </div>
       </div>
-      {activeTab === 'A' && <TypeA3Cart />}
+      {activeTab === 'A3' && <TypeA3Cart />}
       {activeTab === 'A4' && <TypeA4Cart />}
       {activeTab === 'A1' && <TypeA1Cart />}
       {activeTab === 'A2' && <TypeA2Cart />}

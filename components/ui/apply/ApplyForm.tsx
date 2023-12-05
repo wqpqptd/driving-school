@@ -128,7 +128,7 @@ export const ApplyForm = () => {
           <input
             value={formik.values.dateofbirth}
             onChange={formik.handleChange}
-            placeholder="YYYY/MM/DD"
+            placeholder="YYYY-MM-DD"
             type="text"
             name="dateofbirth"
             pattern='\d{4}-\d{2}-\d{2}'
@@ -179,12 +179,12 @@ export const ApplyForm = () => {
           htmlFor="idcard"
           className="block text-sm font-semibold leading-6 text-gray-900"
         >
-          Mã định danh
+          Căn cước công dân
         </label>
         <input
           value={formik.values.idcard}
           onChange={formik.handleChange}
-          placeholder="Mã định danh"
+          placeholder="Căn cước công dân"
           type="text"
           name="idcard"
           id="idcard"
